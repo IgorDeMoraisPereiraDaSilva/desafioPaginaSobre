@@ -1,0 +1,185 @@
+/*this is the style for home and maybe other pages*/
+
+*{/*thats a style to reseting the defalt behavior in browser*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container{ 
+/*that's a style for control the limit of my page*/
+    width: 80%;
+    margin: auto;
+}
+
+.header,.footer{
+    /*this is the header class style*/
+    background-color: #232323;
+    width: 100%;
+    height: 80px;
+    border-bottom: rgba(5, 250, 25, 0.446) solid 3px;
+
+}
+
+.footer{
+    border-top: rgba(5, 250, 25, 0.446) solid 3.5px;
+}
+
+.header h1, .footer h1{
+    /*this is the style for H1 element within the header class*/
+    float: left;
+    color: aliceblue;
+}
+
+.header ul{
+/*this is the style for UL element within the header class*/
+    float: right;
+    list-style: none;
+}
+
+.header h1, .header ul , .footer h1{
+    margin-top: 20px;
+}
+.header li{
+/*this the style for LI element within the header class*/
+    display: inline-block;
+    padding: 6px;
+    font-size: 18px;
+    background-color: #444;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.header ul li a{
+/* this is the styele for a elemente whithin LI elemente within UL element within the header class*/
+    text-decoration: none;
+    color: white;
+}
+
+.header ul li a:hover{
+    color: rgba(5, 250, 25, 0.672);
+}
+
+.header .color--red , .footer .color--red{
+    color: red;
+    font-weight: bold;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-image: url('img/Morangos\(blur\).jpg');
+    background-size: cover;
+}
+
+.banner .container .banner__text > div{
+    padding-top: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner .content{
+    width: 80%;
+    box-shadow: inset 0px 0px 10px #07c420;
+    background-color: #06f02567;
+    border-radius: 10px;
+    border: rgba(99, 3, 233, 0.7) solid 1.5px;
+}
+
+
+.banner h1{
+    
+    padding-top: 15px;
+    font-size:24pt;
+    font-weight: lighter;
+}
+.banner h2{
+    margin-top: 10px;
+    font-size: 18pt;
+    font-weight: lighter;
+    color:linear-gradient(90deg, rgba(93,6,106,0.8603816526610644) 3%, rgba(5,203,64,0.8239670868347339) 54%, rgba(255,55,0,0.76234243697479) 85%);;
+}
+
+
+.about{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60vh;
+    background-color: #232323;
+    text-align: center;
+}
+
+
+.about--item{  
+    width: 32%;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.about--item img{
+    margin-right: 2vw;
+    float: left;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 100%;
+    justify-content: space-between;
+ }
+
+.about  p{
+    display: block;
+    font-size: x-large;
+    text-align:right;
+}
+
+
+.box{
+    text-align: center;
+}
+
+.box--item{
+    display: inline-block;
+    width: 32%;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.box--item img{
+   width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.box--item h3, .box--item p{
+    margin-top: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: radial-gradient(circle, rgba(120,4,67,0.9752275910364145) 3%, rgba(109,203,5,0.8239670868347339) 54%, rgba(255,0,14,0.76234243697479) 85%);
+
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(93,6,106,0.8603816526610644) 3%, rgba(5,203,64,0.8239670868347339) 54%, rgba(255,55,0,0.76234243697479) 85%);
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: rgb(255, 0, 0);
+}
